@@ -1,0 +1,64 @@
+@media (min-width: 940px) {
+    .wrapper {
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        .images {
+            position: relative;
+            display: flex;
+            flex: 1;
+            order: 1;
+
+            .overflow {
+                display: flex;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 15px;
+
+                .center {
+                    height: 0;
+                    align-self: center;
+                }
+            }
+
+            .pattern-desktop {
+                transform: translate(-25%, -50%);
+                width: 125%;
+            }
+
+            .woman-desktop {
+                transform: translate(-20%, -50%);
+                position: absolute;
+                top: 50%;
+                left: 0;
+            }
+
+            .box {
+                align-self: center;
+                z-index: 99;
+                transform: translate(-50%, 25%);
+            }
+        }
+    }
+
+    .woman-mobile,
+    .pattern-mobile {
+        display: none;
+    }
+
+    .main-content {
+        flex: 1;
+        order: 2;
+        border-radius: 15px;
+        overflow: hidden;
+        padding: $spacing + 20;
+
+        .big-title {
+            text-align: left;
+            padding: $spacing + 20 $spacing;
+        }
+    }
+}

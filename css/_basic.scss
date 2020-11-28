@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: $spacing + 30;
+    padding: 0;
+    font-family: $mainfont;
+    font-size: $size;
+    background-image: linear-gradient(
+        to top,
+        hsl(240, 73%, 65%),
+        hsl(273, 75%, 66%)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}

@@ -1,0 +1,43 @@
+.acc-btn {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $dividers;
+    padding: $spacing;
+    transition: ease-in-out 500ms;
+
+    &::after {
+        content: url(../images/icon-arrow-down.svg);
+    }
+
+    &.active::after {
+        content: url(../images/icon-arrow-down.svg);
+        transform: rotate(180deg);
+    }
+
+    &.active {
+        font-weight: 700;
+    }
+
+    &:hover {
+        color: $soft;
+        cursor: pointer;
+    }
+}
+
+.accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: ease-in-out 500ms;
+    text-align: left;
+    line-height: 1.8;
+    font-size: $size + 1;
+
+    .text {
+        margin: 0;
+        padding: $spacing;
+    }
+}

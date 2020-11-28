@@ -1,0 +1,36 @@
+.wrapper {
+    position: relative;
+    min-width: 300px;
+    min-height: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: $spacing + 40 $spacing;
+    margin: $spacing + 50;
+
+    .big-title {
+        margin: 0;
+        text-align: center;
+        padding-bottom: $spacing + 20;
+        padding-top: $spacing + 40;
+    }
+
+    .woman-mobile {
+        position: absolute;
+        z-index: 1;
+        top: 0%;
+        left: 50%;
+        transform: translate(-55%, -50%);
+    }
+
+    .pattern-mobile {
+        position: absolute;
+        z-index: 1;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .images {
+        display: none;
+    }
+}
